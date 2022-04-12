@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/reset.css">
+    <link rel="stylesheet" href="style/main.css">
+    <title>My Pocket</title>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header container">
+        <div class="logo">
+            <!-- Logo -->
+            <div class="top-line"></div>
+            <h1 class="logo-text">My Pocket</h1>
+            <div class="bottom-line"></div>
+        </div>
+    </header>
+
+    <!-- Main Div , Img and calculation  -->
+    <div class="my-pocket container">
+        <!-- Img -->
+        <div class="img">
+            <img src="img/saving-money.jpeg" width="100%" height="100%" alt="">
+        </div>
+        <!-- Calculation -->
+        <div class="calculation">
+            <h1 class="incomeTitle">Income</h1>
+            <!-- Income label and input -->
+            <label for="">Income :</label>
+            <input type="number"  id="incomeInput" class="calculate-inputs">
+            <h1 class="expensesTitle">Expenses</h1>
+            <!-- Food label and input -->
+            <label for="">Food :</label>
+            <input type="number"  id="foodInput" class="calculate-inputs">
+            <!-- Rent label and input -->
+            <label for="">Rent :</label>
+            <input type="number"  id="rentInput" class="calculate-inputs">
+            <!-- Clothers label and input -->
+            <label for="">Clothers :</label>
+            <input type="number"  id="clothersInput" class="calculate-inputs">
+            <!-- Calculate button -->
+            <button class="calculate" id="calculateBtn">Calculate</button>
+            <!-- Total expenses and balance text appears when click on calculate button -->
+            <h1 id="totalExpenses"></h1>
+            <h1 id="balanceField"></h1>
+            <!-- Percent save div -->
+            <div class="save-div">
+                <label for="">Save</label>
+                <input type="number"  id="percentInput">
+                <button class="save" id="saveBtn">Save</button>
+            </div>
+            <!-- Saving amount and remaining balance text , appears when click on save button-->
+            <h1 id="savingAmount"></h1>
+            <h1 id="remBalance"></h1>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>
